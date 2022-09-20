@@ -25,7 +25,7 @@ set -eE
 ## Project: LineageOS/android_packages_apps_Settings
 
 ./vendor/lineage/build/tools/repopick.py 322833 # Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
-./vendor/lineage/build/tools/repopick.py 327686 # Settings: Add biometrics success haptic feedback preference
+#./vendor/lineage/build/tools/repopick.py 327686 # Settings: Add biometrics success haptic feedback preference
 
 ## Project: LineageOS/android_packages_apps_Trebuchet
 
@@ -50,6 +50,6 @@ set -eE
 
 ## Project: LineageOS/android_vendor_lineage
 
-./vendor/lineage/build/tools/repopick.py 317982 # device_config: Keep up to 7 days of permission usage history
+#./vendor/lineage/build/tools/repopick.py 317982 # device_config: Keep up to 7 days of permission usage history
 ./vendor/lineage/build/tools/repopick.py 328958 # apns: add We
 
