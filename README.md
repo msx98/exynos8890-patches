@@ -1,4 +1,7 @@
 # LineageOS 19.1 patches for Exynos 8890/8895 support
+
+- This was taken from 8890q, patches were made by Ivan Meler, modified a bit because some picks were redundant, also didn't need frameworks/base
+
 Just copy them to coresponding folder and git apply them (or git am --signoff < path/to/file.patch)
 
 `picks.sh` is generated with [picklistmaker](https://github.com/AndyCGYan/picklistmaker),
