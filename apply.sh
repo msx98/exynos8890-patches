@@ -1,7 +1,8 @@
 #!/bin/bash
 
-PATCHES_DIR=$1
-REPO_DIR=$2
+DEFAULT_REPO_DIR=$REPO_DIR
+PATCHES_DIR=${1:-"./"}
+REPO_DIR=${2:-"$DEFAULT_REPO_DIR"}
 
 for dir in $PATCHES_DIR/*/
 do
