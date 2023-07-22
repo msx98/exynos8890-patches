@@ -10,6 +10,5 @@ do
 	dest_path="$REPO_DIR/$new_path"
 	echo "Patching in $dest_path"
 	cd $dest_path
-	git show HEAD
-	#git reset --hard HEAD~1
+	git reset --hard HEAD~1
 done
