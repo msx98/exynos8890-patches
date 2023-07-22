@@ -1,8 +1,7 @@
 #!/bin/bash
 
-DEFAULT_REPO_DIR=$REPO_DIR
 PATCHES_DIR=${1:-"./"}
-REPO_DIR=${2:-"$DEFAULT_REPO_DIR"}
+REPO_DIR=${2:-"$SRC_DIR"}
 
 for dir in $PATCHES_DIR/*/
 do
@@ -13,6 +12,7 @@ do
 	cd $dest_path
 	for patch_file in $dir/*.patch
 	do
+		echo "Applying $patch_file"
 		git am --signoff < $patch_file
 	done
 done
